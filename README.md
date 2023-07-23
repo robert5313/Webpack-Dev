@@ -33,3 +33,23 @@ The image element will be display beside the text while the dist directory somet
 the webpack found our file in src folder and processed it.
 
 
+Every time we want to compile your code
+##  npm run build
+
+The different options available in webpack which helps to automatically compile our code
+
+    webpack's Watch Mode
+    webpack-dev-server
+    webpack-dev-middleware
+
+##  Using Watch Mode
+We can instract webpack to watch all the files within our dependency graph for changes.
+
+If one of the files is updated, the code will be recompiled we will not need to run the full build manually
+add
+ "watch": "webpack --watch",
+ to Package.json file
+We run # npm run watch
+
+The webpack automatically recompiles the changed module!
+but the downside is that we have to refresh our browser in order to see the changes.
